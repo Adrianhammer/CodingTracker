@@ -8,7 +8,7 @@ using System.Collections.Specialized;
 
 string sAttr;
 
-sAttr = ConfigurationManager.AppSettings.Get("Key0");
+sAttr = ConfigurationManager.AppSettings.Get("Key1");
 
 Console.WriteLine("The value of keky0  is " +sAttr);
 
