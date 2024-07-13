@@ -48,7 +48,9 @@ internal class DatabaseManager
                     );";
 
                 connection.Execute(tableCmd);
-                AnsiConsole.Markup($"[bold green]Table {tableName} created successfully[/]\n");
+                AnsiConsole.Markup($"[bold green]Table {tableName} created successfully![/]\n");
+                AnsiConsole.Markup("[bold green]----------------------------------[/]\n");
+
             }
         }
         catch (Exception ex)

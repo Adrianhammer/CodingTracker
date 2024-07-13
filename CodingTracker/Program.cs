@@ -6,8 +6,10 @@ using System.Collections.Specialized;
 
 
 DatabaseManager databaseManager = new();
+UserInput userInput = new();
 
 databaseManager.CreateTable();
+userInput.MainMenu();
 
 
 
