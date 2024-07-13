@@ -4,14 +4,14 @@ using System.Configuration;
 using System.Collections.Specialized;
 
 
+
+DatabaseManager databaseManager = new();
+
+databaseManager.CreateTable();
+
+
+
 //AnsiConsole.Markup("[underline red]Hello[/] World!");
-
-string sAttr;
-
-sAttr = ConfigurationManager.AppSettings.Get("Key1");
-
-Console.WriteLine("The value of keky0  is " +sAttr);
-
 
 //Classes:
 // UserInput

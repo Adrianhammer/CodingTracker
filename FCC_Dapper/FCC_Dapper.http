@@ -1,6 +1,0 @@
-@FCC_Dapper_HostAddress = http://localhost:5288
-
-GET {{FCC_Dapper_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
