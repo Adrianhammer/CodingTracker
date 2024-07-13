@@ -3,6 +3,9 @@ using Dapper;
 using System.Configuration;
 using Spectre.Console;
 
+// Purpose of class:
+// The DatabaseManager class is responsible for managing the SQLite database connection and schema. 
+// It retrieves the connection string from the configuration file and provides a method to create the "coding" table if it does not already exist.
 internal class DatabaseManager
 {
     private readonly string connectionString;
@@ -56,7 +59,7 @@ internal class DatabaseManager
         catch (Exception ex)
         {
             // Handle or log the exception
-            Console.WriteLine($"An error occured while creating the table: {ex.Message}");
+            Console.WriteLine($"An error occurred while creating the table: {ex.Message}");
             throw;
         }
     }
